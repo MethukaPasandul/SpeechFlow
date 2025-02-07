@@ -17,7 +17,7 @@ A simple Web extension that transcribes speech to text in real-time.
 3. Enable **Developer mode** (top-right corner in chrome).
 4. Click **Load unpacked** and select the folder containing the extension files.
 5. The extension will now appear in the Chrome toolbar.
-6. To allow microphone permission navitate to toolbar and with a right click on extension, go to **web permissions**, then gain access for microphone.
+6. Fisrt time trying to trying to tanscribing will redirect to temporary webpage to grant microphone permission. click **Allow** on it.
 
 ## Usage
 

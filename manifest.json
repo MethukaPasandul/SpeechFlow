@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Speech to Text Extension",
-  "version": "1.0",
+  "name": "SpeechFlow",
+  "version": "1.0.1",
   "description": "Transcribe what the user says in real-time.",
   "permissions": [
     "storage",
-    "tabCapture"
+    "tabCapture",
+    "tabs"
   ],
   "action": {
     "default_popup": "popup.html",
@@ -17,5 +18,20 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "icons": {
+    "16": "Assets/Icons/16x16.png",
+    "48": "Assets/Icons/48x48.png",
+    "128": "Assets/Icons/128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "permission.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
 }
