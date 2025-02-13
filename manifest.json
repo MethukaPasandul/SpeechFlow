@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SpeechFlow",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Transcribe what the user says in real-time.",
   "permissions": [
     "storage",
