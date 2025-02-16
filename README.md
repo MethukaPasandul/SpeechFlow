@@ -17,8 +17,11 @@ A simple Web extension that transcribes speech to text in real-time.
 2. Enable **Developer mode** (top-right corner in chrome).
 3. Click **Load unpacked** and select the folder containing the extension files.
 4. The extension will now appear in the Chrome toolbar.
-### Download directly from chrome webstore.
+5. Fisrt time trying to trying to tanscribing will redirect to temporary webpage to grant microphone permission. click **Allow** on it.
+   
 # OR
+
+### Download directly from chrome webstore.
 1. [Click here](https://chromewebstore.google.com/detail/speechflow/pominkicmlhfhbcnedcpggfebkhgjgce)
 2. Fisrt time trying to trying to tanscribing will redirect to temporary webpage to grant microphone permission. click **Allow** on it.
 
