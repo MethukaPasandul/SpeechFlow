@@ -19,6 +19,8 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
   recognition.continuous = true;
   recognition.interimResults = true;
 
+  recognition.lang = "en-US";
+
   recognition.onresult = (event) => {
     let transcript = "";
     for (let i = 0; i < event.results.length; i++) {
@@ -37,6 +39,14 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 } else {
   alert("Your browser does not support speech recognition.");
 }
+
+document.getElementById("languageSelector").addEventListener("change", (event) => {
+  const selectedLanguage = event.target.value;
+  if (recognition) {
+    recognition.lang = selectedLanguage; // Update the language
+    console.log(`Language set to: ${selectedLanguage}`);
+  }
+});
 
 
 // Redirect to permission.html to request microphone access
