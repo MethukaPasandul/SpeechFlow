@@ -9,6 +9,7 @@ A simple Web extension that transcribes speech to text in real-time.
 - Displays transcribed text in real-time.
 - user can save transcribed texts or copy to clipboard.
 - allow user to remove saved texts.
+- user can trascribe from many laguages, such as Mandarin, German, Thai...
 
 ## Installation
 
