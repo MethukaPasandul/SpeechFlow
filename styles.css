@@ -9,23 +9,6 @@ body {
     flex-direction: column;
 }
 
-#languageSelector {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #3e4451;
-    color: #a1a1a1;
-    font-family: sans-serif;
-    font-size: 14px;
-    outline: none;
-}
-
-#languageSelector:hover {
-    border-color: #a1a1a1;
-}
-
 #mainSection {
     display: flex;
     flex-direction: column;
@@ -282,6 +265,23 @@ body {
 .btnContainer button,
 #backBtn {
     transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+#languageSelector {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #3e4451;
+    color: #a1a1a1;
+    font-family: sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+#languageSelector:hover {
+    border-color: #a1a1a1;
 }
 
 .glow {
