@@ -60,6 +60,7 @@ The extension requires the following permissions:
 ![main page - transcribe off](Assets/Screenshots/ss1.png)
 ![main page - transcribe on](Assets/Screenshots/ss2.png)
 ![text saved page](Assets/Screenshots/ss3.png)
+![language selector](Assets/Screenshots/ss4.png)
 
 ## Contributing
 
