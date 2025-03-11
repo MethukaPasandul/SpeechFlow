@@ -1,12 +1,13 @@
 body {
     width: 300px;
     min-width: 250px;
-    padding: 10px;
+    padding: 0px;
     background-color: rgb(31, 31, 31);
     color: aliceblue;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    height: 450px;
 }
 
 #mainSection {
@@ -51,7 +52,7 @@ body {
 }
 
 #transcription:focus {
-    animation: scrollFade 0.3s ease-in-out;
+    transition: scroll-top 0.5s ease-in-out;
 }
 
 #savedSection {
@@ -267,24 +268,57 @@ body {
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
+.glow {
+    box-shadow: 0 0 15px rgb(98, 234, 252) !important;
+}
+
 #languageSelector {
     width: 100%;
     padding: 8px;
     margin: 10px 0;
-    border: 1px solid #555;
     border-radius: 5px;
-    background-color: #3e4451;
     color: #a1a1a1;
     font-family: sans-serif;
-    font-size: 14px;
     outline: none;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    background: #272727;
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+        inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 #languageSelector:hover {
-    border-color: #a1a1a1;
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #41465b;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #323646;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
 }
 
-.glow {
-    box-shadow: 0 0 20px rgb(151, 243, 255) !important;
-    transform: scale(1.05);
+#languageSelector:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+}
+
+#languageSelector.disabled,
+#languageSelector.disabled:hover {
+    cursor: not-allowed;
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
 }

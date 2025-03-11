@@ -31,7 +31,6 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
   };
 
   recognition.onerror = (event) => {
-    console.error("Speech recognition error:", event.error);
     if (event.error === "not-allowed") {
       alert("Microphone access is required. Please allow access when prompted.");
     }
@@ -43,8 +42,7 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 document.getElementById("languageSelector").addEventListener("change", (event) => {
   const selectedLanguage = event.target.value;
   if (recognition) {
-    recognition.lang = selectedLanguage; // Update the language
-    console.log(`Language set to: ${selectedLanguage}`);
+    recognition.lang = selectedLanguage;
   }
 });
 
@@ -195,7 +193,7 @@ function removeSavedText(index) {
 }
 
 
-// Toggle button glow effect
+// Toggle button glow effect / disable language selector
 document.addEventListener('DOMContentLoaded', () => {
   const checkbox = document.getElementById('checkbox');
 
@@ -205,5 +203,13 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons.forEach(button => {
       button.classList.toggle('glow', checkbox.checked);
     });
+
+    if (checkbox.checked) {
+      languageSelector.disabled = true;
+      languageSelector.classList.add('disabled');
+    } else {
+      languageSelector.disabled = false;
+      languageSelector.classList.remove('disabled');
+    }
   });
 });
